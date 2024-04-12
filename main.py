@@ -23,6 +23,7 @@ def SieveOfEratosthenes(n):
 
 def TrialByDivisionCheck(n):
     # Nums < 2 are not prime
+    startTime = time.time()
     if n < 2:
         return False
     # 2 and 3 are prime so we can get those out of the way
@@ -40,6 +41,8 @@ def TrialByDivisionCheck(n):
         if n % i == 0 or n % (i + 2) == 0:
             return False
 
+    endTime = time.time()
+    #print("Time for checking prime:",endTime - startTime)
     # If it has not been marked as not prime earlier, then it is prime
     return True
 
