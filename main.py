@@ -21,7 +21,7 @@ def SieveOfEratosthenes(n):
     return result
 
 
-def TrialByDivisionCheck(n):
+def TrialDivisionCheck(n):
     # Nums < 2 are not prime
     startTime = time.time()
     if n < 2:
@@ -46,7 +46,7 @@ def TrialByDivisionCheck(n):
     # If it has not been marked as not prime earlier, then it is prime
     return True
 
-def TrialByDivisionGeneration(n):
+def TrialDivisionGeneration(n):
     # Get the start time of the algorithm
     startTime = time.time()
     # Array for storing all the prime numbers
