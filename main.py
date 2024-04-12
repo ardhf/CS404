@@ -54,11 +54,11 @@ def TrialDivisionGeneration(n):
     # checks all numbers from 2 to n
     for num in range(2, n + 1):
         # Plugs the number into the trial by division algorithm
-        if TrialByDivisionCheck(num):
+        if TrialDivisionCheck(num):
             primes.append(num)
     # get the end time
     endTime = time.time()
-    print("Trial by Division:", endTime - startTime)
+    print("Trial Division:", endTime - startTime)
     return primes
 
 
